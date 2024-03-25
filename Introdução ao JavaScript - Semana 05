@@ -1,0 +1,26 @@
+function testLet() {
+    if (true) {
+        let x = 10;
+        console.log("Dentro do bloco let:", x); 
+    }
+}
+testLet();
+
+function testConst() {
+    const y = 20;
+    if (true) {
+        console.log("Dentro do bloco const:", y); 
+    }
+}
+
+testConst();
+
+function testVar() {
+    if (true) {
+        var z = 30;
+        console.log("Dentro do bloco var:", z); // Saída: 30
+    }
+    console.log("Fora do bloco var:", z); // Saída: 30
+}
+
+testVar();
